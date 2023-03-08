@@ -263,6 +263,8 @@ public class Peripheral extends Activity implements ServiceFragmentDelegate {
         mCurrentServiceFragment = new HeartRateServiceFragment();
       } else if (peripheralIndex == 2) {
         mCurrentServiceFragment = new HealthThermometerServiceFragment();
+      } else if (peripheralIndex == 3) {
+        mCurrentServiceFragment = new AccelServiceFragment();
       } else {
         Log.wtf(TAG, "Service doesn't exist");
       }
